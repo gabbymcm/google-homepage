@@ -12,18 +12,26 @@
 
 
 button {
+    /* position: relative;
+    top: 0;
+    right: 30px;
+    width: auto;
+     */
     display: inline-block;
-    text-align: center;
+    margin: auto;
     border: none;
+    padding: 0 16px;
     height: 36px;
-    padding: 0px 16px;
-    text-align: center;
     font-size: 13px;
     color: #757575;
     font-weight: bold;
     font-family: arial, sans-serif;
     background-color: #f2f2f2;
     border-radius: 2px;
+}
+
+button:hover {
+    box-shadow: 0 0.2px 0.2px 0 #808080;
 }
 
 #searchbar {
@@ -36,45 +44,31 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 li {
-    display: inline;
+    float: left;
 }
 
-#left, #right {
-    -webkit-appearance: none;
-    color: #000000;
-    font-family: arial, sans-serif;
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 13px;
+    font-family: Arial, sans-serif;
+    color: black; 
+    font-size: 13px
 }
 
-#left:hover, #right:hover {
-    text-decoration: underline
+li a:hover {
+    text-decoration: underline;
 }
 
-#right {
-    float: right;
-}
-
-#user {
-    height: 20px;
-    width: 20px;
-}
-
-#apps {
-    height: 20px;
-    width: 20px;
-}
-
-footer {
+.footer {
     background-color: #f2f2f2;
-    border: solid;
-    border-width: thin;
-    border-color: #f2f2f2;
-    height: 50px;
-    margin-top: -50px;
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
